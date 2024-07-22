@@ -61,16 +61,23 @@
             </section>
             <!-- Mobile Menu -->
             <section class="md:hidden">
-                <span id="open-hamurger" class="text-3xl">&#9776;</span>
+                <span id="open-hamburger" class="text-3xl">&#9776;</span>
             </section>
-            <nav class="hidden">
-                <span id="close-hamburger">&#10005;</span>
-                <ul>
+            <nav
+                class="absolute hidden w-full bg-gray-400 left-0 top-0 p-3 text-right"
+                id="mobile-menu"
+            >
+                <span id="close-hamburger" class="text-4xl">&#10005;</span>
+                <ul class="text-center mb-5 leading-10 text-2xl">
                     <li>Products</li>
                     <li>Templates</li>
                     <li>Pricing</li>
                     <li>Reviews</li>
                 </ul>
+                <div class="flex flex-col gap-4">
+                    <button class="button-one shadow-xl">LOG IN</button>
+                    <button class="button-one shadow-xl">START FREE</button>
+                </div>
             </nav>
         </header>
         <!-- <main>
@@ -233,5 +240,6 @@
                 <li>Fugit, a?</li>
             </ul>
         </footer> -->
+        <script src="./js/script.js"></script>
     </body>
 </html>
