@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --clr-green: #00b289;
+    --clr-gray: #4c4d5f;
+    --clr-orange: #f8db62;
+}
+
+@layer components {
+    .button-one {
+        @apply bg-green-500 p-2 rounded-md mr-1 hover:bg-white border-green-500 border-4 transition-all duration-300;
+    }
+
+    .button-second {
+        @apply bg-white p-2 rounded-md mr-1 hover:bg-green-500 border-green-500 border-4 transition-all duration-300;
+    }
+
+    /* .drop-menu-head {
+        @apply group cursor-pointer;
+    }
+
+    .drop-menu-body {
+        @apply invisible group-hover:visible z-50 bg-gray-100 text-gray-800 shadow-xl absolute p-3;
+    } */
+}

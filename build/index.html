@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/output.css" />
+        <link
+            rel="shortcut icon"
+            href="./images/icons8-leaf-96.png"
+            type="image/x-icon"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+        <title>Bonsai</title>
+    </head>
+    <body class="w-full">
+        <header class="fixed flex justify-between w-full p-3 items-center">
+            <!-- Desktop Menu -->
+            <section>
+                <a href="#">
+                    <img src="./images/bonsai-logo.svg" />
+                </a>
+            </section>
+            <nav class="hidden md:block w-2/5 lg:w-1/2">
+                <ul class="flex justify-between items-center">
+                    <li class="group cursor-pointer">
+                        Product
+                        <i class="fa fa-caret-down"></i>
+                        <ul
+                            class="invisible group-hover:visible z-50 bg-gray-100 text-gray-800 shadow-xl absolute p-3 leading-8"
+                        >
+                            <li>Bonsai Workflow</li>
+                            <li>Bonsai Tax</li>
+                            <li>Bonsai Cash</li>
+                        </ul>
+                    </li>
+                    <li class="group cursor-pointer">
+                        Templates
+                        <i class="fa fa-caret-down"></i>
+                        <ul
+                            class="invisible group-hover:visible z-50 bg-gray-100 text-gray-800 shadow-xl absolute p-3 leading-8"
+                        >
+                            <li>Contract Templates</li>
+                            <li>Proposal Templates</li>
+                            <li>Invoice Templates</li>
+                            <li>Agreements Templates</li>
+                            <li>Quote Templates</li>
+                            <li>Scope Of Workflow Templates</li>
+                            <li>Brief Templates</li>
+                        </ul>
+                    </li>
+                    <li>Pricing</li>
+                    <li>Reviews</li>
+                </ul>
+            </nav>
+            <section class="hidden md:block">
+                <button class="button-one">LOG IN</button>
+                <button class="button-second">START FREE</button>
+            </section>
+            <!-- Mobile Menu -->
+            <section class="md:hidden">
+                <span id="open-hamurger" class="text-3xl">&#9776;</span>
+            </section>
+            <nav class="hidden">
+                <span id="close-hamburger">&#10005;</span>
+                <ul>
+                    <li>Products</li>
+                    <li>Templates</li>
+                    <li>Pricing</li>
+                    <li>Reviews</li>
+                </ul>
+            </nav>
+        </header>
+        <!-- <main>
+            <section>
+                <h1>Plans & Pricing</h1>
+                <div>
+                    <img
+                        src="./images/5e9d7255d3886a6103fb12a9_FREE-text.svg"
+                    />
+                    <span>Monthly</span>
+                    <div>
+                        <div></div>
+                    </div>
+                    <span>Yearly</span>
+                </div>
+            </section>
+            <section>
+                <div>
+                    <h2>Starter</h2>
+                    <p>
+                        Ideal for freelancers and contractors just starting out.
+                    </p>
+                    <div>
+                        <span>$</span>
+                        24
+                        <span>/MONTH</span>
+                    </div>
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Assumenda soluta atque odio rerum.</li>
+                        <li>Aspernatur aliquid facilis quae fugiat.</li>
+                        <li>Quasi molestiae nulla perferendis consectetur.</li>
+                        <li>Aut veniam blanditiis saepe alias.</li>
+                        <li>Ex maxime soluta modi sequi.</li>
+                        <li>Totam consequuntur reprehenderit alias ex.</li>
+                        <li>Exercitationem officiis eos corporis quos.</li>
+                        <li>Cupiditate temporibus ab unde inventore.</li>
+                        <li>Ducimus dolorem minus deleniti harum!</li>
+                    </ul>
+                    <button>START FREE</button>
+                </div>
+                <div>
+                    <h2>Starter</h2>
+                    <p>
+                        Ideal for freelancers and contractors just starting out.
+                    </p>
+                    <div>
+                        <span>$</span>
+                        24
+                        <span>/MONTH</span>
+                    </div>
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Assumenda soluta atque odio rerum.</li>
+                        <li>Aspernatur aliquid facilis quae fugiat.</li>
+                        <li>Quasi molestiae nulla perferendis consectetur.</li>
+                        <li>Aut veniam blanditiis saepe alias.</li>
+                        <li>Ex maxime soluta modi sequi.</li>
+                        <li>Totam consequuntur reprehenderit alias ex.</li>
+                        <li>Exercitationem officiis eos corporis quos.</li>
+                        <li>Cupiditate temporibus ab unde inventore.</li>
+                        <li>Ducimus dolorem minus deleniti harum!</li>
+                    </ul>
+                    <button>START FREE</button>
+                </div>
+                <div>
+                    <h2>Starter</h2>
+                    <p>
+                        Ideal for freelancers and contractors just starting out.
+                    </p>
+                    <div>
+                        <span>$</span>
+                        24
+                        <span>/MONTH</span>
+                    </div>
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Assumenda soluta atque odio rerum.</li>
+                        <li>Aspernatur aliquid facilis quae fugiat.</li>
+                        <li>Quasi molestiae nulla perferendis consectetur.</li>
+                        <li>Aut veniam blanditiis saepe alias.</li>
+                        <li>Ex maxime soluta modi sequi.</li>
+                        <li>Totam consequuntur reprehenderit alias ex.</li>
+                        <li>Exercitationem officiis eos corporis quos.</li>
+                        <li>Cupiditate temporibus ab unde inventore.</li>
+                        <li>Ducimus dolorem minus deleniti harum!</li>
+                    </ul>
+                    <button>START FREE</button>
+                </div>
+            </section>
+            <section>
+                <h2>Super charge your work with add-ons</h2>
+                <div>
+                    <h3>Collaborators</h3>
+                    <p>
+                        Invite other users to specific projects for limited
+                        access and functionality.
+                    </p>
+                    <div><h2>Free</h2></div>
+                </div>
+                <div>
+                    <h3>Partners</h3>
+                    <p>
+                        Invite other users for full account access and company
+                        management.
+                    </p>
+                    <div>
+                        <h2>$9</h2>
+                        <h4>/MONTH</h4>
+                    </div>
+                </div>
+                <div>
+                    <h3>Bonsai Tax</h3>
+                    <p>
+                        Track expenses, identify write-offs, and estimate
+                        quarterly taxes easily.
+                    </p>
+                    <a href="#LEARNMORE">LEARN MORE</a>
+                    <div>
+                        <h2>$10</h2>
+                        <h4>/MONTH</h4>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h2>It’s your business.</h2>
+                <h2>We’re here to help it grow.</h2>
+                <div>
+                    <button>START FREE</button>
+                </div>
+            </section>
+            <article>
+                <h2>Frequently Asked Questions</h2>
+            </article>
+        </main>
+        <footer>
+            <ul>
+                PRODUCTS
+                <li>Lorem, ipsum dolor.</li>
+                <li>Pariatur, distinctio ullam.</li>
+                <li>Reiciendis, sit nisi.</li>
+                <li>Magnam, alias sunt!</li>
+                <li>Unde, dolorem quas!</li>
+            </ul>
+            <ul>
+                FREE RESOURCES
+                <li>Lorem, ipsum dolor.</li>
+                <li>Dolores, maiores asperiores.</li>
+                <li>Quo, quaerat sequi!</li>
+                <li>Odit, iste tempora.</li>
+                <li>Aliquam, magnam nesciunt!</li>
+                <li>Atque, doloribus deleniti.</li>
+                <li>In, exercitationem incidunt!</li>
+            </ul>
+            <ul>
+                BONSAI
+                <li>Lorem, ipsum.</li>
+                <li>Sed, et!</li>
+                <li>Optio, corrupti.</li>
+                <li>Fugit, a?</li>
+            </ul>
+        </footer> -->
+    </body>
+</html>
