@@ -1,3 +1,4 @@
+<!-- http://web.archive.org/web/20221117021714/https://www.hellobonsai.com/pricing -->
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -15,16 +16,18 @@
         />
         <title>Bonsai</title>
     </head>
-    <body class="w-full">
-        <header class="fixed flex justify-between w-full p-3 items-center">
+    <body class="w-full max-w-6xl mx-auto">
+        <header
+            class="flex justify-between w-full p-3 items-center bg-white sticky top-0"
+        >
             <!-- Desktop Menu -->
-            <section>
+            <section class="mt-2 ml-1">
                 <a href="#">
-                    <img src="./images/bonsai-logo.svg" />
+                    <img src="./images/bonsai-logo.svg" class="w-[150px]" />
                 </a>
             </section>
-            <nav class="hidden md:block w-2/5 lg:w-1/2">
-                <ul class="flex justify-between items-center">
+            <nav class="hidden lg:block mt-3">
+                <ul class="flex justify-end gap-12 font-extralight">
                     <li class="group cursor-pointer">
                         Product
                         <i class="fa fa-caret-down"></i>
@@ -55,12 +58,12 @@
                     <li>Reviews</li>
                 </ul>
             </nav>
-            <section class="hidden md:block">
+            <section class="hidden lg:block mt-3">
                 <button class="button-one">LOG IN</button>
                 <button class="button-second">START FREE</button>
             </section>
             <!-- Mobile Menu -->
-            <section class="md:hidden">
+            <section class="lg:hidden">
                 <span id="open-hamburger" class="text-3xl">&#9776;</span>
             </section>
             <nav
@@ -80,16 +83,23 @@
                 </div>
             </nav>
         </header>
-        <!-- <main>
-            <section>
-                <h1>Plans & Pricing</h1>
-                <div>
+        <main class="mt-40">
+            <section
+                class="flex w-full justify-center gap-16 items-center relative z-0"
+            >
+                <h1 class="text-4xl">Plans & Pricing</h1>
+                <div class="flex items-center gap-7">
                     <img
+                        class="absolute -top-16"
                         src="./images/5e9d7255d3886a6103fb12a9_FREE-text.svg"
                     />
                     <span>Monthly</span>
-                    <div>
-                        <div></div>
+                    <div
+                        class="bg-green-600 w-14 h-7 p-4 rounded-3xl relative cursor-pointer"
+                    >
+                        <div
+                            class="w-[26px] h-[26px] rounded-full bg-white absolute left-1 top-[2.5px]"
+                        ></div>
                     </div>
                     <span>Yearly</span>
                 </div>
@@ -213,7 +223,7 @@
                 <h2>Frequently Asked Questions</h2>
             </article>
         </main>
-        <footer>
+        <!-- <footer>
             <ul>
                 PRODUCTS
                 <li>Lorem, ipsum dolor.</li>
