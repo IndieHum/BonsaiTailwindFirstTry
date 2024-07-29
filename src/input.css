@@ -43,6 +43,46 @@
         @apply bg-[--clr-green] rounded  hover:bg-[--clr-green-hover]  transition-all duration-300 text-white text-sm font-medium px-6 py-[9px];
     }
 
+    .main-card {
+        @apply border rounded px-10 py-16 w-fit min-h-full text-[--clr-gray] flex flex-col shadow-2xl;
+    }
+
+    .main-card h2 {
+        @apply text-2xl font-bold;
+    }
+
+    .main-card p {
+        @apply font-light text-sm my-2;
+    }
+
+    .main-card div {
+        @apply border-b-2 border-[--clr-green] mt-4 mb-10;
+    }
+
+    .main-card div bold {
+        @apply text-6xl font-bold mx-2;
+    }
+
+    .main-card div span:first-child {
+        @apply text-2xl float-start;
+    }
+
+    .main-card div span:last-child {
+        @apply text-2xl;
+    }
+
+    .main-card ul {
+        @apply mb-6;
+    }
+
+    .main-card ul li {
+        @apply tracking-wider mb-5 before:content-["✅"] before:mr-2;
+    }
+
+    .main-card button {
+        @apply w-full mt-auto bg-[--clr-green] text-white py-4 rounded;
+    }
+
     /* .drop-menu-head {
         @apply group cursor-pointer;
     }
@@ -50,10 +90,4 @@
     .drop-menu-body {
         @apply invisible group-hover:visible z-50 bg-gray-100 text-gray-800 shadow-xl absolute p-3;
     } */
-}
-
-@layer utilities {
-    .bg-clip-path {
-        clip-path: polygon(19% 0, 100% 0, 100% 30%, 50% 56%);
-    }
 }
