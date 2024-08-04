@@ -44,7 +44,7 @@
     }
 
     .main-card {
-        @apply border rounded px-10 py-16 w-fit min-h-full text-[--clr-gray] flex flex-col shadow-2xl flex-wrap;
+        @apply border rounded px-10 py-16 w-full min-h-full text-[--clr-gray] flex flex-col shadow-2xl flex-wrap;
     }
 
     .main-card h2 {
