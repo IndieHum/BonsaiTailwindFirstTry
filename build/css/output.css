@@ -604,6 +604,7 @@ video {
 }
 
 .main-card {
+  margin-bottom: 2.5rem;
   display: flex;
   min-height: 100%;
   width: 100%;
@@ -893,24 +894,14 @@ video {
   padding-right: 0.75rem;
 }
 
-.py-3 {
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-}
-
-.px-5 {
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
-}
-
-.px-8 {
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
-
 .px-6 {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+}
+
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
 }
 
 .text-center {
@@ -995,6 +986,19 @@ video {
   visibility: visible;
 }
 
+@media (min-width: 640px) {
+  .sm\:flex-row {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+}
+
 @media (min-width: 1024px) {
   .lg\:block {
     display: block;
@@ -1008,32 +1012,12 @@ video {
     flex-direction: row;
   }
 
-  .lg\:items-center {
-    align-items: center;
-  }
-
-  .lg\:justify-center {
-    justify-content: center;
-  }
-
   .lg\:justify-between {
     justify-content: space-between;
   }
 
   .lg\:gap-7 {
     gap: 1.75rem;
-  }
-
-  .lg\:gap-\[160px\] {
-    gap: 160px;
-  }
-
-  .lg\:gap-\[155px\] {
-    gap: 155px;
-  }
-
-  .lg\:gap-32 {
-    gap: 8rem;
   }
 
   .lg\:px-0 {
