@@ -34,15 +34,17 @@
 }
 
 @layer components {
+    /* BUTTONS COLLECTIONS */
     .button-one {
         --clr-green: #00b289;
         @apply bg-white p-2 rounded mr-3 hover:bg-[--clr-green] hover:text-white border-[--clr-green] border transition-all duration-300 text-[--clr-green] text-sm font-medium px-6 py-2;
     }
 
     .button-second {
-        @apply bg-[--clr-green] rounded  hover:bg-[--clr-green-hover]  transition-all duration-300 text-white text-sm font-medium px-6 py-[9px];
+        @apply bg-[--clr-green] rounded hover:bg-[--clr-green-hover] transition-all duration-300 text-white text-sm font-medium px-6 py-[9px];
     }
 
+    /* MAIN CARD STYLES */
     .main-card {
         @apply border rounded px-10 py-16 mb-10 w-full min-h-full text-[--clr-gray] flex flex-col shadow-2xl flex-wrap;
     }
@@ -83,11 +85,28 @@
         @apply w-full mt-auto bg-[--clr-green] text-white py-4 rounded;
     }
 
-    /* .drop-menu-head {
-        @apply group cursor-pointer;
+    /* LOWER CARD STYLES */
+    .lower-card {
+        @apply border rounded w-full min-h-full text-[--clr-gray] shadow-2xl mb-10 p-4;
     }
 
-    .drop-menu-body {
-        @apply invisible group-hover:visible z-50 bg-gray-100 text-gray-800 shadow-xl absolute p-3;
-    } */
+    .lower-card * {
+        @apply mb-3;
+    }
+
+    .lower-card h3 {
+        @apply text-2xl lg:text-3xl lg:font-extrabold;
+    }
+
+    .lower-card p {
+        @apply lg:text-2xl;
+    }
+
+    .lower-card a {
+        @apply mb-4 underline text-[--clr-green] hover:text-[--clr-green-hover];
+    }
+
+    .lower-card div {
+        @apply flex gap-2 font-bold;
+    }
 }
